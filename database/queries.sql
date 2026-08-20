@@ -3,7 +3,7 @@
 -- READ OPERATIONS (Displaying Data)
 
 
--- Fetch all available voting options
+-- bring out all available voting options
 SELECT id, title, description FROM voting_options;
 
 -- Get current vote count for every option (including options with 0 votes)
@@ -18,16 +18,16 @@ SELECT COUNT(*) AS global_total_votes FROM votes;
 
 
 
--- -- 2. WRITE OPERATIONS (Submitting a Vote)
+-- WRITE OPERATIONS (Submitting a Vote)
 
 
--- --  1st Step : Register or retrieve a voter
--- INSERT INTO voters (voter_identifier, has_voted) 
--- VALUES ('justify@example.com', TRUE);
+--Register or retrieve a voter
+INSERT INTO voters (voter_identifier, has_voted) 
+VALUES ('justify@example.com', TRUE);
 
--- -- 2nd Step: Record the vote cast by the voter (e.g., voter_id = 1, option_id = 2)
--- INSERT INTO votes (voter_id, option_id) 
--- VALUES (1, 2);
+--Record the vote cast by the voter (e.g., voter_id = 1, option_id = 2)
+INSERT INTO votes (voter_id, option_id) 
+VALUES (1, 2);
 
 
 
