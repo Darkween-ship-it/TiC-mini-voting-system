@@ -31,23 +31,23 @@ VALUES (1, 2);
 
 
 
--- -- 3. ANALYTICS & ADMIN OPERATIONS
+--  ANALYTICS & ADMIN OPERATIONS
 
 
--- -- Find the current leading candidate / winner
+-- Find the current leading candidate / winner
 
--- SELECT voting_options.title, COUNT(votes.id) AS vote_count
--- FROM options voting_options
--- JOIN votes ON voting_options.id = votes.option_id
--- GROUP BY voting_options.id, voting_options.title
--- ORDER BY vote_count DESC
--- LIMIT 1;
+SELECT voting_options.title, COUNT(votes.id) AS vote_count
+FROM options voting_options
+JOIN votes ON voting_options.id = votes.option_id
+GROUP BY voting_options.id, voting_options.title
+ORDER BY vote_count DESC
+LIMIT 1;
 
--- -- Check if a specific voter has already cast a vote
--- SELECT has_voted 
--- FROM voters 
--- WHERE voter_identifier = 'justify@example.com';
+-- Check if a specific voter has already cast a vote
+SELECT has_voted 
+FROM voters 
+WHERE voter_identifier = 'justify@example.com';
 
--- -- Admin Operation: Reset all votes (Clear results)
--- TRUNCATE TABLE votes;
--- UPDATE voters SET has_voted = FALSE;
+-- Admin Operation: Reset all votes (Clear results)
+TRUNCATE TABLE votes;
+UPDATE voters SET has_voted = FALSE;
