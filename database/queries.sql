@@ -36,12 +36,11 @@ VALUES (1, 2);
 
 -- Find the current leading candidate / winner
 
-SELECT voting_options.title, COUNT(votes.id) AS vote_count
+SELECT TOP 1 voting_options.title, COUNT(votes.id) AS vote_count
 FROM options voting_options
 JOIN votes ON voting_options.id = votes.option_id
 GROUP BY voting_options.id, voting_options.title
-ORDER BY vote_count DESC
-LIMIT 1;
+ORDER BY vote_count DESC;
 
 -- Check if a specific voter has already cast a vote
 SELECT has_voted 
