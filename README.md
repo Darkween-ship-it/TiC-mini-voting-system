@@ -33,17 +33,16 @@ TiC-mini-voting-system/
 │   ├── App.jsx                # Core state logic (useState)
 │   └── main.jsx               # App entry point
 └── README.md                  # Project documentation
----
 
-## Getting Started
+ Getting Started
 
-### Prerequisites
-* [Node.js](https://nodejs.org/) (v16 or higher)
-* [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+ Prerequisites
+ [Node.js](https://nodejs.org/) (v16 or higher)
+ [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
 
-### Installation & Local Setup
+ Installation & Local Setup
 
-1. **Clone the repository:**
+1. Clone the repository: 
    ```bash
    git clone https://github.com/Darkween-ship-it/TiC-mini-voting-system.git
    cd TiC-mini-voting-system
@@ -61,7 +60,7 @@ TiC-mini-voting-system/
 
 4. **Open in browser:**
    Navigate to `http://localhost:5173` .
----
+
 
 ## Team Contributions & Division of Labor
 
