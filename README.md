@@ -39,3 +39,50 @@ tic-mini-voting-system/
 │   └── main.jsx               # App entry point
 └── README.md                  # Project documentation
 
+---
+
+## Getting Started
+
+### Prerequisites
+* [Node.js](https://nodejs.org/) (v16 or higher)
+* [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+
+### Installation & Local Setup
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/YOUR_ORGANIZATION/YOUR_REPO_NAME.git
+   cd YOUR_REPO_NAME
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
+
+4. **Open in browser:**
+   Navigate to `http://localhost:5173` (or the URL provided in your terminal).
+
+---
+
+## Team Contributions & Division of Labor
+
+| Team Member | Role | Key Deliverables |
+| :--- | :--- | :--- |
+| **Member 1** | Team Lead / State Manager | Initial repo scaffolding, global state management (`App.jsx`), and `mockData.js`. |
+| **Member 2** | Frontend Developer A | Candidate cards display (`VotingOptions.jsx`, `VotingOption.jsx`) and click selection UI. |
+| **Member 3** | Frontend Developer B | Voter form (`VoteForm.jsx`), dynamic results with progress bars (`Results.jsx`), and admin toggle controls. |
+| **Member 4** | Database Engineer & QA | Relational database design (`schema.sql`), analytical query scripting (`queries.sql`), and documentation (`README.md`). |
+
+---
+
+## Tech Stack
+
+* **Frontend:** React, HTML5, CSS3, JavaScript (ES6+)
+* **Database Design:** SQL (MySQL / PostgreSQL compatible)
+* **Version Control:** Git & GitHub
