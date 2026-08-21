@@ -21,7 +21,7 @@ A lightweight, responsive web application for managing real-time polls, collecti
 ##  Project Architecture & Layout
 
 ```text
-tic-mini-voting-system/
+TiC-mini-voting-system/
 ├── database/
 │   ├── schema.sql         # Database tables and sample seed data
 │   └── queries.sql        # Data selection, counting, and analytics queries
@@ -51,8 +51,8 @@ tic-mini-voting-system/
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/YOUR_ORGANIZATION/YOUR_REPO_NAME.git
-   cd YOUR_REPO_NAME
+   git clone https://github.com/Darkween-ship-it/TiC-mini-voting-system.git
+   cd TiC-mini-voting-system
    ```
 
 2. **Install dependencies:**
@@ -66,7 +66,7 @@ tic-mini-voting-system/
    ```
 
 4. **Open in browser:**
-   Navigate to `http://localhost:5173` (or the URL provided in your terminal).
+   Navigate to `http://localhost:5173` .
 
 ---
 
