@@ -1,0 +1,80 @@
+.features {
+  padding: 80px 24px;
+  background: var(--bg);
+}
+
+.features-container {
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section-tag {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  background: var(--accent-bg);
+  color: var(--accent);
+  margin-bottom: 12px;
+}
+
+.features h2 {
+  font-size: 2.2rem;
+  margin-bottom: 8px;
+}
+
+.section-desc {
+  color: var(--text);
+  font-size: 1.05rem;
+  margin-bottom: 48px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.feature-card {
+  padding: 32px 24px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  text-align: left;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.feature-card:hover {
+  border-color: var(--accent-border);
+  box-shadow: 0 8px 30px rgba(170, 59, 255, 0.08);
+}
+
+.feature-icon {
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+.feature-card h3 {
+  font-size: 1.15rem;
+  margin: 0 0 8px;
+  color: var(--text-h);
+}
+
+.feature-card p {
+  font-size: 0.95rem;
+  color: var(--text);
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .features h2 {
+    font-size: 1.75rem;
+  }
+}

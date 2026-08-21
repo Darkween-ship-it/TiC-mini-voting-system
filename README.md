@@ -1,20 +1,15 @@
-# TiC Mini Voting System
+# React + Vite
 
-A lightweight, responsive web application for managing real-time polls, collecting votes, and analyzing results. Built as a collaborative group project covering client-side React state management and relational database design.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
----
+Currently, two official plugins are available:
 
-##  Key Features
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-###  Frontend (React)
-* **Interactive Candidates UI:** Display voting options clearly with title, description, and vote actions.
-* **Voter Input Validation:** Simple name/ID checks to prevent duplicate voting in a single session.
-* **Dynamic Leaderboard & Results:** Instant vote tally updates featuring progress bars and visual winner badges.
-* **Admin Controls:** Toggle results visibility (show/hide) and reset the poll back to initial state.
+## React Compiler
 
-###  Database (SQL)
-* **Relational Schema (`schema.sql`):** Fully structured tables for `voting_options`, `voters`, and `votes` with foreign keys and unique constraints.
-* **Analytical Queries (`queries.sql`):** Pre-written queries for tracking total votes, calculating counts via `LEFT JOIN` and `GROUP BY`, and identifying top candidates.
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
 ---
 
@@ -38,7 +33,6 @@ TiC-mini-voting-system/
 │   ├── App.jsx                # Core state logic (useState)
 │   └── main.jsx               # App entry point
 └── README.md                  # Project documentation
-
 ---
 
 ## Getting Started
@@ -67,7 +61,6 @@ TiC-mini-voting-system/
 
 4. **Open in browser:**
    Navigate to `http://localhost:5173` .
-
 ---
 
 ## Team Contributions & Division of Labor
@@ -78,7 +71,6 @@ TiC-mini-voting-system/
 | **Member 2** | Frontend Developer A | Candidate cards display (`VotingOptions.jsx`, `VotingOption.jsx`) and click selection UI. |
 | **Member 3** | Frontend Developer B | Voter form (`VoteForm.jsx`), dynamic results with progress bars (`Results.jsx`), and admin toggle controls. |
 | **Member 4** | Database Engineer & QA | Relational database design (`schema.sql`), analytical query scripting (`queries.sql`), and documentation (`README.md`). |
-
 ---
 
 ## Tech Stack
@@ -86,3 +78,6 @@ TiC-mini-voting-system/
 * **Frontend:** React, HTML5, CSS3, JavaScript (ES6+)
 * **Database Design:** SQL (MySQL / PostgreSQL compatible)
 * **Version Control:** Git & GitHub
+## Expanding the ESLint configuration
+
+If you are developing a production application, we recommend using TypeScript with type-aware rules enabled. See the [TypeScript template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) and [`typescript-eslint`](https://typescript-eslint.io) documentation for details.
